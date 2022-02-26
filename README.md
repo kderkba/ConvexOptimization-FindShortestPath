@@ -1,11 +1,5 @@
 # Convex Optimization
 
-$$
-\begin{equation}
-  x = \epsilon
-\end{equation}
-$$
-
 # Part 1: Warm-up, minimization problem and gradient descent
 The first part is about using the Gradient descent method to solve a minimization problem
 
