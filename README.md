@@ -26,18 +26,18 @@ We define penalization functions such that we avoid the obstacle(s).
 We discretize every function and implement them.
 ## External penalization
 
-The penalization function is $ \mathcal{R}(\gamma) = \frac{1}{2} \int_{0}^{1} max(0,r^{2} -(x-a)^{2} - (y-b)^{2})^2 dt$
-The goal is to minimize $\mathcal{H}_{\epsilon} = \mathcal{H}(\gamma) + \frac{1}{\epsilon}\mathcal{R}(\gamma)$
+The penalization function is <img src="https://render.githubusercontent.com/render/math?math=\mathcal{R}(\gamma) = \frac{1}{2} \int_{0}^{1} max(0,r^{2} -(x-a)^{2} - (y-b)^{2})^2 dt">
+The goal is to minimize <img src="https://render.githubusercontent.com/render/math?math=\mathcal{H}_{\epsilon} = \mathcal{H}(\gamma) + \frac{1}{\epsilon}\mathcal{R}(\gamma)">
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/penalization1.png)
 
-As $\epsilon$ becomes smaller, the penalization becomes larger and the constraint is respected.
+As <img src="https://render.githubusercontent.com/render/math?math=\epsilon"> becomes smaller, the penalization becomes larger and the constraint is respected.
 
 ## Internal penalization
 
-The penalization function is $\mathcal{L}(\gamma) = \frac{1}{2}\int_{0}^{1} log(r^{2} -(x-a)^{2} - (y-b)^{2}) dt $
+The penalization function is <img src="https://render.githubusercontent.com/render/math?math=\mathcal{L}(\gamma) = \frac{1}{2}\int_{0}^{1} log(r^{2} -(x-a)^{2} - (y-b)^{2}) dt ">
 
-The goal is to minimize $\mathcal{G}_{\alpha} = \mathcal{H}(\gamma) - \alpha\mathcal{L}(\gamma}$
+The goal is to minimize <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}_{\alpha} = \mathcal{H}(\gamma) - \alpha\mathcal{L}(\gamma}">
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/penalization2.png)
 
@@ -47,8 +47,8 @@ The algorithm goes through the obstacle until $\apha$ is large enough.
 
 There seems to be a threshold phenomenon with the second penalization method where it will pass through the obstacle until penalization parameter is large enough to respect the constraint
 
-The first penalization method is an external penalization method because the minimiser of $\mathcal{R}$ does not necessarily verify the constraints, only in an approximate manner. And the penalization fonction is 0 only in the admissible set of points.
-Whereas, the second method is an internal penalization method. The minimizer of $\mathcal{L}$ verifies the constraints and the penalization works when we approach the constraints, not just when we violate it.
+The first penalization method is an external penalization method because the minimiser of <img src="https://render.githubusercontent.com/render/math?math=\mathcal{R}"> does not necessarily verify the constraints, only in an approximate manner. And the penalization fonction is 0 only in the admissible set of points.
+Whereas, the second method is an internal penalization method. The minimizer of  <img src="https://render.githubusercontent.com/render/math?math=\mathcal{L}"> verifies the constraints and the penalization works when we approach the constraints, not just when we violate it.
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/comparison.png)
 
@@ -56,6 +56,6 @@ Whereas, the second method is an internal penalization method. The minimizer of 
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/obstacles.png)
 
-Observe the behavior when we add obstacles
+We observe the behavior when we add obstacles
 
 
