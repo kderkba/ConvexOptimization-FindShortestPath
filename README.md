@@ -43,7 +43,7 @@ The goal is to minimize <img src="https://render.githubusercontent.com/render/ma
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/penalization2.png)
 
-The algorithm goes through the obstacle until  <img src="https://render.githubusercontent.com/render/math?math=\apha"> is large enough.
+The algorithm goes through the obstacle until  <img src="https://render.githubusercontent.com/render/math?math=\alpha"> is large enough.
 
 ## Comparison
 
