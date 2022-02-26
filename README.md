@@ -20,7 +20,7 @@ The error compared to numpy linalg solve decreases as the number of iteration in
 In this part we explore two penalization methods. We consider a path between an origin and an endpoint and we try to find the shortest path according to constraints
 
 Let 
-<img src="https://render.githubusercontent.com/render/math?math=\gamma"> be the path (collection of points in a square of length 1), $ \mathcal{H}(\gamma) = \frac{1}{2} \int_{0}^{1} [x'(t)^2+ y'(t)^2]dt$ be the function to minimize, $ D = {(x,y) \in \mathbb{R}^{2}, (x-a)^{2} + (y-b)^{2} < r^{2}}$ the constraint.
+<img src="https://render.githubusercontent.com/render/math?math=\gamma"> be the path (collection of points in a square of length 1),<img src="https://render.githubusercontent.com/render/math?math=\mathcal{H}(\gamma) = \frac{1}{2} \int_{0}^{1} [x'(t)^2+ y'(t)^2]dt"> be the function to minimize,<img src="https://render.githubusercontent.com/render/math?math=D = {(x,y) \in \mathbb{R}^{2}, (x-a)^{2} + (y-b)^{2} < r^{2}}"> the constraint.
 
 We define penalization functions such that we avoid the obstacle(s).
 We discretize every function and implement them.
