@@ -24,9 +24,11 @@ Let
 
 We define penalization functions such that we avoid the obstacle(s).
 We discretize every function and implement them.
+
 ## External penalization
 
 The penalization function is <img src="https://render.githubusercontent.com/render/math?math=\mathcal{R}(\gamma) = \frac{1}{2} \int_{0}^{1} max(0,r^{2} -(x-a)^{2} - (y-b)^{2})^2 dt">
+
 The goal is to minimize <img src="https://render.githubusercontent.com/render/math?math=\mathcal{H}_{\epsilon} = \mathcal{H}(\gamma) + \frac{1}{\epsilon}\mathcal{R}(\gamma)">
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/penalization1.png)
@@ -37,11 +39,11 @@ As <img src="https://render.githubusercontent.com/render/math?math=\epsilon"> be
 
 The penalization function is <img src="https://render.githubusercontent.com/render/math?math=\mathcal{L}(\gamma) = \frac{1}{2}\int_{0}^{1} log(r^{2} -(x-a)^{2} - (y-b)^{2}) dt ">
 
-The goal is to minimize <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}_{\alpha} = \mathcal{H}(\gamma) - \alpha\mathcal{L}(\gamma}">
+The goal is to minimize <img src="https://render.githubusercontent.com/render/math?math=\mathcal{G}_{\alpha} = \mathcal{H}(\gamma) - \alpha\mathcal{L}(\gamma)">
 
 ![alt text](https://github.com/kderkba/ConvexOptimization/blob/main/penalization2.png)
 
-The algorithm goes through the obstacle until $\apha$ is large enough.
+The algorithm goes through the obstacle until  <img src="https://render.githubusercontent.com/render/math?math=\apha"> is large enough.
 
 ## Comparison
 
